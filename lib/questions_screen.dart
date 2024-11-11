@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:quizapp_v2/models/answer_button.dart';
 import 'package:quizapp_v2/data/questions.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quizapp_v2/end_screen.dart';
 
 class QuestionScreen extends StatefulWidget {
-  const QuestionScreen({super.key});
+  const QuestionScreen({super.key, required this.onSelectAnswer});
+  final void Function(String answer) onSelectAnswer;
   @override
   State<QuestionScreen> createState() {
     return _QuestionScreenState();
@@ -14,7 +14,8 @@ class QuestionScreen extends StatefulWidget {
 
 class _QuestionScreenState extends State<QuestionScreen> {
   int currQuestionIndex = 0;
-  void answerQuestion() {
+  void answerQuestion(String answer) {
+    widget.onSelectAnswer(answer);
     setState(() {
       currQuestionIndex++;
     });
@@ -22,13 +23,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
   @override
   Widget build(context) {
-    // exiting from quiz when all questions are answered
-    if(currQuestionIndex == questions.length) {
-      setState(() {
-        const EndScreen();
-      });
-      return const EndScreen();
-    }
     final currentQuestion = questions[currQuestionIndex];
     return SizedBox(
       width: double.infinity, // as wide as possible
@@ -49,14 +43,12 @@ class _QuestionScreenState extends State<QuestionScreen> {
             ),
 
             const SizedBox(height: 30),
-
-            /* map returns a new list containing a new object for
-            / each item of the initial list (but does not change it) */
-            // the '...' converts the list (which would be nested here(not wanted))
-            // into comma-seperated multiple individial values
-            // like it should be
             ...currentQuestion.getShuffledAnswers().map((answer) {
-              return AnswerButton(answer: answer, onTap: answerQuestion);
+              return AnswerButton(
+                  answer: answer,
+                  onTap: (){
+                    answerQuestion(answer);
+                  });
             }),
           ],
         ),

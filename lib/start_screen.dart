@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
-  // passing a function from Quiz class to this class
-  const StartScreen(this.startQuiz, {super.key});
-  final void Function() startQuiz;
+  final VoidCallback onStart;
+
+  const StartScreen({super.key, required this.onStart});
+
   @override
   Widget build(context) {
     return Center(
@@ -13,12 +14,12 @@ class StartScreen extends StatelessWidget {
           Image.asset(
             'assets/images/quiz-logo.png',
             width: 300,
-            // transparency of the image is regulated here
-            color: const Color.fromARGB(135, 255, 255, 255),
+            height: 300,
+            fit: BoxFit.contain,
           ),
           const SizedBox(height: 30),
           const Text(
-            'Try This Quiz My Nigga',
+            "Try This Car Quiz",
             style: TextStyle(
               color: Colors.white,
               fontSize: 23,
@@ -26,7 +27,7 @@ class StartScreen extends StatelessWidget {
           ),
           const SizedBox(height: 25),
           OutlinedButton.icon(
-            onPressed: startQuiz,
+            onPressed: onStart,
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
               backgroundColor: Colors.deepPurpleAccent,
