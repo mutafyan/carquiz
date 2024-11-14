@@ -42,5 +42,6 @@ app.*.map.json
 !lib/*
 !README.md
 !pubspec.yaml
-
+!android/app/build.gradle
+!android/app/src/main/kotlin/com/mutafyan/carquiz/MainActivity.kt
 /.metadata
