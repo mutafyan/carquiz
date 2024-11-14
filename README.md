@@ -1,16 +1,41 @@
-# quizapp_v2
+# Car Quiz
 
-Car quiz app
+Car Quiz App is a simple Flutter-based quiz application where users can test their knowledge about cars. The app navigates through a series of multiple-choice questions and displays a results screen at the end, showing the user's performance.
 
-## Getting Started
+## Features
+- **Interactive Quiz**: Navigate through a set of car-related questions.
+- **Results Summary**:
+    - Displays the total number of questions answered correctly.
+    - Shows each question along with:
+        - The given answer.
+        - The correct answer.
+    - Marks the question index with **green** for correct answers and **red** for incorrect ones.
+- **Restart Option**: A button to restart the quiz after completing the questions.
 
-This project is a starting point for a Flutter application.
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd carquiz
+   ```
+3. Install dependencies:
+    ```bash
+    flutter pub get
+    ```
+4. Run the app on an emulator or physical device:
+   ```bash
+   flutter run
+    ```
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies Used
+- **Flutter**: UI framework for building cross-platform applications.
+- **Dart**: Programming language used to write Flutter applications.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## License
+This app is open source and available under the MIT License.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Enjoy the Car Quiz App and challenge yourself to learn more about cars! 🚗
+

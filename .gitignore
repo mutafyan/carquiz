@@ -43,3 +43,4 @@ app.*.map.json
 !README.md
 !pubspec.yaml
 
+/.metadata
