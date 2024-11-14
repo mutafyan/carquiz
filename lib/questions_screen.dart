@@ -36,7 +36,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
               currentQuestion.text,
               textAlign: TextAlign.center,
               style: GoogleFonts.lato(
-                color: const Color.fromARGB(255, 224, 149, 237),
+                color: Colors.white,
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),

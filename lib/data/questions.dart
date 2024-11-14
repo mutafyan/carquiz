@@ -54,8 +54,7 @@ const questions = [
       'Rear Power Module',
     ],
   ),
-];
-/*
+
   // 6
   QuizQuestion(
     'In the automotive world, what does SUV stand for?',
@@ -66,6 +65,7 @@ const questions = [
       'Speedy Urban Voyage',
     ],
   ),
+
   // 7
   QuizQuestion(
     'In the automotive world, what does SUV stand for?',
@@ -75,5 +75,5 @@ const questions = [
       'Super Urban Van',
       'Speedy Urban Voyage',
     ],
-  ), */
-
+  ),
+];

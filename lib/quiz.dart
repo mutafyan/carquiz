@@ -38,6 +38,7 @@ class _QuizState extends State<Quiz> {
 
   void restartQuiz() {
     setState(() {
+      selectedAnswers.clear();
       activeScreen = 'start-screen';
     });
   }
@@ -51,20 +52,24 @@ class _QuizState extends State<Quiz> {
     } else if (activeScreen == 'questions-screen') {
       screenWidget = QuestionScreen(onSelectAnswer: saveAnswer);
     } else {
-      // Placeholder for end screen (you can implement a proper end screen here)
-      screenWidget = EndScreen(selectedAnswers: selectedAnswers);
+      screenWidget = EndScreen(selectedAnswers: selectedAnswers, onRestart: restartQuiz);
     }
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Car Quiz',
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white, // Set default background color
+      ),
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.deepPurpleAccent,
                 Colors.deepPurple,
+                Colors.purpleAccent,
               ],
-              begin: Alignment.topLeft,
+              begin: Alignment.topCenter,
               end: Alignment.bottomRight,
             ),
           ),

@@ -19,7 +19,9 @@ class StartScreen extends StatelessWidget {
           ),
           const SizedBox(height: 30),
           const Text(
-            "Try This Car Quiz",
+            "Let's see how much of an enthusiast you are...",
+            textAlign: TextAlign.center,
+            textScaler: TextScaler.linear(1.3),
             style: TextStyle(
               color: Colors.white,
               fontSize: 23,
@@ -30,7 +32,7 @@ class StartScreen extends StatelessWidget {
             onPressed: onStart,
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
-              backgroundColor: Colors.deepPurpleAccent,
+              backgroundColor: Colors.deepPurple,
             ),
             icon: const Icon(Icons.arrow_right_alt),
             label: const Text(
