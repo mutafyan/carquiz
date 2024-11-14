@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quizapp_v2/data/questions.dart';
+import 'package:quizapp_v2/models/control_button.dart';
 import 'package:quizapp_v2/models/results/result_item.dart';
 import 'package:quizapp_v2/models/results/results.dart';
 
@@ -53,18 +54,11 @@ class EndScreen extends StatelessWidget {
             SizedBox(height: 30),
             Results(summaryData),
             SizedBox(height: 30),
-            OutlinedButton.icon(
-              onPressed: onRestart,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.white,
-                backgroundColor: Colors.deepPurple,
-              ),
-              icon: const Icon(Icons.replay_sharp),
-              label: const Text(
-                'Restart the quiz!',
-                style: TextStyle(fontSize: 20),
-              ),
-            ),
+            ControlButton(
+                text: 'Restart the quiz!',
+                onPressed: onRestart,
+                icon: Icon(Icons.replay_sharp)
+            )
         ],
         )
       ),

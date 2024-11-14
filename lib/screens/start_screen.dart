@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp_v2/models/control_button.dart';
 
 class StartScreen extends StatelessWidget {
   final VoidCallback onStart;
@@ -28,18 +29,11 @@ class StartScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 25),
-          OutlinedButton.icon(
-            onPressed: onStart,
-            style: OutlinedButton.styleFrom(
-              foregroundColor: Colors.white,
-              backgroundColor: Colors.deepPurple,
-            ),
-            icon: const Icon(Icons.arrow_right_alt),
-            label: const Text(
-              'Start the quiz!',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
+          ControlButton(
+              text: 'Start the quiz!',
+              onPressed: onStart,
+              icon: Icon(Icons.arrow_right_alt),
+          )
         ],
       ),
     );

@@ -1,6 +1,6 @@
-# Car Quiz
+# Quiz App
 
-Car Quiz App is a simple Flutter-based quiz application where users can test their knowledge about cars. The app navigates through a series of multiple-choice questions and displays a results screen at the end, showing the user's performance.
+Quiz App is a simple Flutter-based car quiz application where users can test their knowledge about cars. The app navigates through a series of multiple-choice questions and displays a results screen at the end, showing the user's performance.
 
 ## Features
 - **Interactive Quiz**: Navigate through a set of car-related questions.
@@ -15,7 +15,7 @@ Car Quiz App is a simple Flutter-based quiz application where users can test the
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/mutafyan/quiz-app.git
    ```
 2. Navigate to the project directory:
    ```bash
