@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp_v2/models/control_button.dart';
+import 'package:carquiz/models/control_button.dart';
 
 class StartScreen extends StatelessWidget {
   final VoidCallback onStart;

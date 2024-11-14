@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:quizapp_v2/models/results/result_item.dart";
+import "package:carquiz/models/results/result_item.dart";
 
 class Results extends StatelessWidget {
   final List<Map<String, Object>> summaryData;

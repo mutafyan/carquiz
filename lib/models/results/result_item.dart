@@ -1,8 +1,8 @@
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
-import "package:quizapp_v2/models/results/result_card.dart";
-import "package:quizapp_v2/models/results/result_index.dart";
-import "package:quizapp_v2/models/results/answer_text.dart";
+import "package:carquiz/models/results/result_card.dart";
+import "package:carquiz/models/results/result_index.dart";
+import "package:carquiz/models/results/answer_text.dart";
 
 class ResultItem extends StatelessWidget {
   final int questionIndex;

@@ -1,9 +1,9 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:quizapp_v2/screens/end_screen.dart';
-import 'package:quizapp_v2/screens/questions_screen.dart';
-import 'package:quizapp_v2/screens/start_screen.dart';
+import 'package:carquiz/screens/end_screen.dart';
+import 'package:carquiz/screens/questions_screen.dart';
+import 'package:carquiz/screens/start_screen.dart';
 import 'data/questions.dart';
 
 class Quiz extends StatefulWidget {

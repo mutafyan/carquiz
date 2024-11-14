@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quizapp_v2/data/questions.dart';
-import 'package:quizapp_v2/models/control_button.dart';
-import 'package:quizapp_v2/models/results/result_item.dart';
-import 'package:quizapp_v2/models/results/results.dart';
+import 'package:carquiz/data/questions.dart';
+import 'package:carquiz/models/control_button.dart';
+import 'package:carquiz/models/results/result_item.dart';
+import 'package:carquiz/models/results/results.dart';
 
 class EndScreen extends StatelessWidget {
   const EndScreen({

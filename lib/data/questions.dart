@@ -1,4 +1,4 @@
-import 'package:quizapp_v2/models/quiz_question.dart';
+import 'package:carquiz/models/quiz_question.dart';
 
 // Internally the 1st answer will always be the
 // right one, but user will be shown shuffled variant
