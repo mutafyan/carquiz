@@ -15,7 +15,7 @@ Quiz App is a simple Flutter-based car quiz application where users can test the
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mutafyan/quiz-app.git
+   git clone https://github.com/mutafyan/carquiz.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -25,7 +25,11 @@ Quiz App is a simple Flutter-based car quiz application where users can test the
     ```bash
     flutter pub get
     ```
-4. Run the app on an emulator or physical device:
+4. Generate a flutter project with given source code:
+    ```bash
+    flutter create .
+    ```
+5. Run the app on an emulator or physical device:
    ```bash
    flutter run
     ```
